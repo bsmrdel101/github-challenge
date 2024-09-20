@@ -1,5 +1,7 @@
+import Header from "@/components/Header";
 import { getAccount } from "@/scripts/controllers/githubController";
 import { useEffect } from "react";
+
 
 export default function Index() {
   useEffect(() => {
@@ -12,8 +14,8 @@ export default function Index() {
 
 
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <main>
+      <Header />
+    </main>
   );
 }
