@@ -1,0 +1,42 @@
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./components/library/button";
+@import "./components/library/input";
+@import "./components/layout";
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: auto;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--grey-light-0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--grey-light-1);
+    border-radius: 10px;
+  }
+}
+
+#__next {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-0);
+  color: var(--light-0);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Be Vietnam Pro', sans-serif, system-ui;
+  overflow: hidden;
+  font-size: var(--font-body);
+}
+
+h1 {
+  font-size: var(--font-large);
+}
